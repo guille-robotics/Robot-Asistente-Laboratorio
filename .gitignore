@@ -1,0 +1,28 @@
+# Carpetas generadas por colcon (ROS 2)
+build/
+install/
+log/
+
+# Archivos temporales y compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos objeto y librerías de C/C++
+*.o
+*.so
+*.os
+*.dylib
+*.a
+*.dll
+
+# Configuraciones de editores de texto e IDEs (VS Code, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos ocultos del sistema operativo
+.DS_Store
+Thumbs.db
