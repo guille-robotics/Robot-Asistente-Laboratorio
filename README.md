@@ -37,13 +37,27 @@ cd ~/tu_workspace/src
 git clone [https://github.com/tu-usuario/robot_lab.git](https://github.com/tu-usuario/robot_lab.git)
 cd ~/tu_workspace
 colcon build --packages-select robot_description
-
+```
 
 ### Ejecutar la Simulación
 
 No olvides hacer source de tu entorno antes de lanzar el robot:
 
+```bash
 source install/setup.bash
 ros2 launch robot_description robot_lab_launch.py
+```
 
-Esto abrirá Gazebo Ignition con el robot_lab instanciado, listo para recibir comandos de velocidad (/r1/cmd_vel) y publicar los datos de sus sensores (/r1/scan, /r1/camera/image_raw).
+Esto abrirá Gazebo Ignition con el `robot_lab` instanciado, listo para recibir comandos de velocidad (`/r1/cmd_vel`) y publicar los datos de sus sensores (`/r1/scan`, `/r1/camera/image_raw`).
+
+## 🗺️ Hoja de Ruta (Roadmap)
+
+- [x] Modelado URDF/Xacro y físicas en Gazebo.
+- [x] Integración de sensores (LiDAR, Cámara, Odometría).
+- [ ] Implementación del entorno de entrenamiento para RL.
+- [ ] Entrenamiento de la política de navegación autónoma.
+- [ ] Integración de la API del LLM para el procesamiento de lenguaje natural.
+- [ ] Pruebas finales en el entorno de laboratorio de la PUCV.
+
+## 🤝 Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar la política de RL o el prompt del LLM, siéntete libre de abrir un *Issue* o enviar un *Pull Request*.
